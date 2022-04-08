@@ -43,7 +43,7 @@ jobs:
         working-directory: packaging
 
       - name: Store the master package artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: packages-${{env.release}}-${{env.bucket-name}}
           path: |

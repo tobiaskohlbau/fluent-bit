@@ -134,7 +134,7 @@ jobs:
 
     - name: Upload the ${{ matrix.distro }} artifacts
       if: always()
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: ${{ steps.formatted_distro.outputs.replaced }}-package
         path: packaging/packages/
